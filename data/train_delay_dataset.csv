@@ -1,0 +1,11 @@
+departure_delay,distance_km,weather,train_type,congestion,arrival_delay
+5,120,clear,regional,low,3
+10,300,rain,intercity,medium,12
+0,80,clear,regional,low,0
+15,400,storm,highspeed,high,25
+7,200,cloudy,intercity,medium,10
+2,150,clear,regional,low,2
+20,500,storm,highspeed,high,30
+8,250,rain,intercity,medium,14
+3,100,clear,regional,low,4
+12,350,storm,highspeed,high,22
