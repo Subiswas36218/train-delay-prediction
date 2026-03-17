@@ -1,7 +1,7 @@
 # 🚆 Train Delay Prediction using Machine Learning
 
 ## 🌍 Live Demo
-👉 https://Subhankar-train-delay.streamlit.app *(update after deployment)*
+👉 https://train-delay-prediction-subhankar.streamlit.app
 
 ## 📂 GitHub Repository
 👉 https://github.com/Subiswas36218/train-delay-prediction
@@ -55,7 +55,62 @@ It demonstrates a **complete end-to-end ML system** including data processing, m
 
 ## 🚀 How to Run Locally
 
-### 1. Clone the repository
+### 1. Clone the repository:
 ```bash
 git clone https://github.com/Subiswas36218/train-delay-prediction.git
 cd train-delay-prediction
+
+2. Create virtual environment:
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install Dependencies:
+pip install -r requirements.txt
+
+4. Train the model:
+python src/train_model.py
+
+5. Run Flask API:
+python src/api.py
+
+6. Run Streamlit Dashboard:
+streamlit run src/app.py
+
+🌐 API Usage
+
+Endpoint:
+POST /predict
+
+Example Request:
+{
+  "departure_delay": 5,
+  "distance_km": 200,
+  "weather": "clear",
+  "train_type": "regional",
+  "congestion": "low"
+}
+
+Response:
+{
+  "predicted_delay": 4.32
+}
+
+🐳 Docker Usage:
+docker build -t train-delay-app .
+docker run -p 5000:5000 train-delay-app
+
+☁️ Deployment:
+	•	Streamlit Cloud (Frontend UI)
+	•	AWS EC2 (Backend API)
+	•	Docker container for portability
+	•	GitHub Actions for CI/CD
+
+📈 Results:
+	•	Mean Absolute Error (MAE): ~X minutes
+	•	R² Score: ~X
+
+🔮 Future Improvements:
+	•	Real-time railway data integration
+	•	Deep learning models (LSTM)
+	•	Database integration (PostgreSQL)
+	•	Kubernetes deployment
