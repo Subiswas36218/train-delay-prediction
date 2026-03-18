@@ -97,7 +97,7 @@ Response:
 
 🐳 Docker Usage:
 docker build -t train-delay-app .
-docker run -p 5000:5000 train-delay-app
+docker run -p 5050:5000 train-delay-app
 
 ☁️ Deployment:
 	•	Streamlit Cloud (Frontend UI)
